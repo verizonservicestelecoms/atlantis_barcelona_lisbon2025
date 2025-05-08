@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="./design.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div id="EverythingContainer">
+        <section class="Header-section">
+            <div class="header-max-width">
+                <!-- <p>Dave Koz Cruise Reservations</p> -->
+                <a href="#"><img src="../login-images/atlantis-logo.png" alt="Atlantis"></a>
+
+                <div id="LangDropdown" class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown()">
+                        <div id="selected-lang" style="display: flex;">
+                            <img src="../login-images/icons8-usa-48.png" alt="USA">
+                            <span>EN</span>
+                        </div>
+                        <i class="fa fa-angle-right" style="margin: auto 0;"></i>
+                    </button>
+                    <div id="LangOptions" class="dropdown-content">
+                        <p class="Langs" id="USA" onclick="selectLanguage(this)"><img
+                                src="../login-images/icons8-usa-48.png" alt="USA"><span>EN</span></p>
+                        <p class="Langs" id="DE" onclick="selectLanguage(this)"><img
+                                src="../login-images/icons8-germany-48.png" alt="DE"><span>DE</span></p>
+                        <p class="Langs" id="FR" onclick="selectLanguage(this)"><img
+                                src="../login-images/icons8-france-48.png" alt="FR"><span>FR</span></p>
+                        <p class="Langs" id="ES" onclick="selectLanguage(this)"><img
+                                src="../login-images/icons8-spain-48.png" alt="ES"><span>ES</span></p>
+                    </div>
+                </div>
+                <!-- <img id="menuBar" src="./Barsmenu.svg" alt="Menu"> -->
+                <div></div>
+            </div>
+        </section>
+
+        <section id="SubHeaderOrange">
+            <div style="max-width: 1000px; display: flex; align-items: center; line-height: 1.5; margin: 0 auto;">
+                <div style="width: 20%;">
+                    <img src="../login-images/VV_Portrait_Logo.jpg" alt="voyages">
+                </div>
+                <div style="width: 60%; text-align: center;">
+                    <p style="font-size: 16px;" data-translate="voyageName">Virgin Voyages</p>
+                    <a data-translate="voyageDate">July 13 - 22, 2025</a>
+                </div>
+                <div style="width: 20%; display: flex;">
+                    <i class="fa fa-check"></i>
+                </div>
+            </div>
+        </section>
+        <section class="ContainSec">
+            <p class="titleUP">Barcelona to Lisbon Cruise 2025: Available Categories</p>
+            <div class="navSteps">
+                <p id="AccomodationsiD">Accomodations <i class="fa fa-caret-right"></i></p>
+                <p>Guests <i class="fa fa-caret-right"></i></p>
+                <p>Payment <i class="fa fa-caret-right"></i></p>
+                <p>Confirmation</p>
+            </div>
+            <div id="LineHr"></div>
+            <section class="ImgSection">
+                <div>
+                    <img id="coverPic" src="./atlantis-logo-all-gay-cruises-rgb_orig.png" alt="cover">
+                    <!-- <p id="RedMessage">We are sorry, we have no available inventory for 2 guests</p> -->
+                    <div class="TextUnderPic">
+                        <p id="BoldFestname">Barcelona to Lisbon Cruise</p>
+                        <p style="color: hsl(0, 0%, 50%);">Virgin Scarlet Lady</p>
+                        <p style="color: hsl(0, 0%, 50%);">July 13, 2025 - July 22, 2025</p>
+                        <div style="display: flex; gap: 5px;">
+                            <p style="font-weight: bold;">Cabin Number:</p>
+                            <p style="color: #033f7d;">9338A</p>
+                        </div>
+                        <div style="display: flex; gap: 5px;">
+                            <p style="font-weight: bold;">Guests:</p>
+                            <p style="color: hsl(0, 0%, 50%);">3 Adult</p>
+                        </div>
+<!--                         
+                        <div style="display: flex; gap: 5px;">
+                            <p style="font-weight: bold;">Second Guest:</p>
+                            <p>Unassigned</p>
+                        </div>
+                        
+                        <div style="display: flex; gap: 5px;">
+                            <p style="font-weight: bold;">Third Guest:</p>
+                            <p>Unassigned</p>
+                        </div> -->
+
+                        <div>
+                            <p style="font-weight: bold;">Your Stateroom:</p>
+                            <p style="color: hsl(0, 0%, 50%);">XL Sea Terrace</p>
+                        </div>
+                        <div>
+                            <p style="font-weight: bold;">Additional Items:</p>
+                            <p style="color: hsl(0, 0%, 50%);">1st - Show Seating</p>
+                            <p style="color: hsl(0, 0%, 50%);">2nd - Show Seating</p>
+                            <p style="color: hsl(0, 0%, 50%);">3rd - Show Seating</p>
+                        </div>
+                        <a class="LinksColor" id="StartOverLink" href="#">Active</a>
+                    </div>
+                </div>
+                <div id="detailsContainer"
+                    style="margin: 0; font-size: 14px; color: #404040; max-width: 1100px; margin: 0 auto;">
+                    <div>
+                        <p href="#" style="color: #404040; font-size: 14px; font-weight: bold; margin-bottom: 20px;">
+                            <u>Cabin Reservation
+                                Transfer Request</u></p>
+                        <p>Welcome to<i> The Barcelona to Lisbon Cruise '2025'. </i>(Cruise)! This note is intended to confirm information
+                            you provided during the reservation Transfer process for the Cruise (New passenger Details).
+                            as well as identifying the XL Sea Terrace Stateroom, price, and payment method that you
+                            selected (Reservation).</p>
+                        <section id="Table" style="margin: 20px 0; line-height: 1.4;">
+                            <div style="display: flex; margin: 12px 0 0; font-weight: bold;">
+                                <p style="margin: 0 auto 0 0; width: 30%;">Transferor</p>
+                                <p style="margin: 0 auto; width: 30%;">Email</p>
+                                <div style="margin: 0 auto; width: 20%;"></div>
+                                <div style="margin: 0 0 0 auto; width: 20%;"></div>
+                            </div>
+                            <div id="Line" style="min-width: 100%; background-color: #cccccc; height: 1px;"></div>
+                            <div style="display: flex; margin: 0; max-height: fit-content;">
+                                <p style="margin: 0 auto 0 0; width: 30%;">Nicol Watkins</p>
+                                <p style="margin: 0 auto; width: 65%;">nicolwatkinsbarlow@gmail.com</p>
+                                <div style="margin: 0 0 0 auto; width: 5%;"></div>
+                            </div>
+                        </section>
+                        <section id="Table" style="margin: 20px 0; line-height: 1.4;">
+                            <div style="display: flex; margin: 12px 0 0; font-weight: bold;">
+                                <p style="margin: 0 auto 0 0; width: 30%;">Purchaser</p>
+                                <p style="margin: 0 auto; width: 30%;">Email</p>
+                                <div style="margin: 0 auto; width: 20%;"></div>
+                                <div style="margin: 0 0 0 auto; width: 20%;"></div>
+                            </div>
+                            <div id="Line" style="min-width: 100%; background-color: #cccccc; height: 1px;"></div>
+                            <div style="display: flex; margin: 0; max-height: fit-content;">
+                                <p style="margin: 0 auto 0 0; width: 30%;">James McNab</p>
+                                <p style="margin: 0 auto; width: 65%;">planets-ratter.5k@icloud.com</p>
+                                <div style="margin: 0 0 0 auto; width: 5%;"></div>
+                            </div>
+                        </section>
+
+                        <section id="Table2" style="margin: 40px 0; line-height: 1.4;">
+                            <div style="display: flex; margin: 12px 0 0; font-weight: bold;">
+                                <p style="margin: 0 auto 0 0; width: 75%;">Barcelona to Lisbon (July 13, 2025 - July
+                                    22, 2025)</p>
+                                <div style="margin: 0 auto; width: 25%;"></div>
+                            </div>
+                            <div style="display: flex; margin: 2px 0; font-weight: bold;">
+                                <p style="margin: 0 auto 0 0; width: 25%;">Item</p>
+                                <p style="margin: 0 auto; width: 25%;">Category</p>
+                                <p style="margin: 0 auto; width: 25%;">Guest</p>
+                                <p style="margin: 0 0 0 auto; width: 25%; text-align: end;">Amount</p>
+                            </div>
+                            <div id="Line" style="min-width: 100%; background-color: #cccccc; height: 1px;"></div>
+                            <div style="display: flex; margin: 0;">
+                                <p style="margin: 0 auto 0 0; width: 25%;">9338A - XL Sea Terrace</p>
+                                <p style="margin: 0 auto; width: 25%;">XL Sea Terrace</p>
+                                <p style="margin: 0 auto; width: 25%;">James McNab</p>
+                                <p style="margin: 0 0 0 auto; width: 25%; text-align: end;">$2,259.00</p>
+                            </div>
+                            <div style="display: flex; margin: 0;">
+                                <p style="margin: 0 auto 0 0; width: 25%;">Pass Through Charges</p>
+                                <p style="margin: 0 auto; width: 25%;">Port Tax and Gratuities</p>
+                                <p style="margin: 0 auto; width: 25%;"></p>
+                                <p style="margin: 0 0 0 auto; width: 25%; text-align: end;">$460.00</p>
+                            </div>
+                            <div style="display: flex; margin: 0;">
+                                <p style="margin: 0 auto 0 0; width: 25%;">9338A - XL Sea Terrace</p>
+                                <p style="margin: 0 auto; width: 25%;">XL Sea Terrace</p>
+                                <p style="margin: 0 auto; width: 25%;">Guest 2</p>
+                                <p style="margin: 0 0 0 auto; width: 25%; text-align: end;">$2,259.00</p>
+                            </div>
+                            <div style="display: flex; margin: 0;">
+                                <p style="margin: 0 auto 0 0; width: 25%;">Pass Through Charges</p>
+                                <p style="margin: 0 auto; width: 25%;">Port Tax and Gratuities</p>
+                                <p style="margin: 0 auto; width: 25%;"></p>
+                                <p style="margin: 0 0 0 auto; width: 25%; text-align: end;">$460.00</p>
+                            </div>
+                            <div style="display: flex; margin: 0;">
+                                <p style="margin: 0 auto 0 0; width: 25%;">9338A - XL Sea Terrace</p>
+                                <p style="margin: 0 auto; width: 25%;">XL Sea Terrace</p>
+                                <p style="margin: 0 auto; width: 25%;">Guest 3</p>
+                                <p style="margin: 0 0 0 auto; width: 25%; text-align: end;">$2,259.00</p>
+                            </div>
+                            <div style="display: flex; margin: 0;">
+                                <p style="margin: 0 auto 0 0; width: 25%;">Pass Through Charges</p>
+                                <p style="margin: 0 auto; width: 25%;">Port Tax and Gratuities</p>
+                                <p style="margin: 0 auto; width: 25%;"></p>
+                                <p style="margin: 0 0 0 auto; width: 25%; text-align: end;">$460.00</p>
+                            </div>
+                            <div style="display: flex; margin: 2px 0; font-weight: bold;">
+                                <div style="margin: 0 auto 0 0; width: 25%;"></div>
+                                <div style="margin: 0 auto; width: 25%;"></div>
+                                <p style="margin: 0 auto; width: 25%;">Item Total</p>
+                                <p style="margin: 0 0 0 auto; width: 25%; text-align: end;">$8,157.00</p>
+                            </div>
+                            <div id="Line" style="min-width: 100%; background-color: #cccccc; height: 1px;"></div>
+                            <div style="display: flex; margin: 0; font-family: 'ChronicaPro-Black'; color: hsl(0, 0%, 30%);">
+                                <div style="margin: 0 auto 0 0; width: 25%;"></div>
+                                <div style="margin: 0 auto; width: 25%;"></div>
+                                <p style="margin: 0 auto; width: 29%;">James McNab Responsibility</p>
+                                <p style="margin: 0 0 0 auto; width: 21%; text-align: end;">$8,157.00</p>
+                            </div>
+                        </section>
+
+                        <section id="Table5" style="margin: 40px 0; line-height: 1.4;">
+                            <div style="display: flex; margin: 12px 0 0; font-weight: bold;">
+                                <p style="margin: 0 auto 0 0; width: 75%;">Barcelona to Lisbon Cruise Show Seating (July
+                                    13, 2025 - July 22, 2025)</p>
+                                <div style="margin: 0 0 0 auto; width: 25%;"></div>
+                            </div>
+                            <div style="display: flex; margin: 2px 0; font-weight: bold;">
+                                <p style="margin: 0 auto 0 0; width: 25%;">Item</p>
+                                <p style="margin: 0 auto; width: 25%;">Category</p>
+                                <p style="margin: 0 auto; width: 25%;">Guest</p>
+                                <p style="margin: 0 0 0 auto; width: 25%; text-align: end;"></p>
+                            </div>
+                            <div id="Line" style="min-width: 100%; background-color: #cccccc; height: 1px;"></div>
+                            <div style="display: flex; margin: 0;">
+                                <p style="margin: 0 auto 0 0; width: 25%;">1st - show Seating</p>
+                                <p style="margin: 0 auto; width: 25%;">1st - show Seating</p>
+                                <p style="margin: 0 auto; width: 25%;">James McNab</p>
+                                <div style="margin: 0 0 0 auto; width: 25%; text-align: end;"></div>
+                            </div>
+                            <br>
+                            <div style="display: flex; margin: 0;">
+                                <p style="margin: 0 auto 0 0; width: 25%;">1st - show Seating</p>
+                                <p style="margin: 0 auto; width: 25%;">1st - show Seating</p>
+                                <p style="margin: 0 auto; width: 25%;">Adult 2</p>
+                                <div style="margin: 0 0 0 auto; width: 25%; text-align: end;"></div>
+                            </div>
+                            <br>
+                            <div style="display: flex; margin: 0;">
+                                <p style="margin: 0 auto 0 0; width: 25%;">1st - show Seating</p>
+                                <p style="margin: 0 auto; width: 25%;">1st - show Seating</p>
+                                <p style="margin: 0 auto; width: 25%;">Adult 3</p>
+                                <div style="margin: 0 0 0 auto; width: 25%; text-align: end;"></div>
+                            </div>
+                    </div>
+                    <div id="Line" style="min-width: 100%; background-color: #cccccc; height: 1px; margin: 40px 0 0;">
+                    </div>
+                    <div style="display: flex; margin: 0; font-weight: bold; font-family: 'ChronicaPro-Black'; color: hsl(0, 0%, 30%);">
+                        <div style="margin: 0 auto 0 0; width: 25%;"></div>
+                        <div style="margin: 0 auto; width: 25%;"></div>
+                        <p style="margin: 0 auto; width: 25%;">Reservation Total</p>
+                        <p style="margin: 0 0 0 auto; width: 25%; text-align: end;">$8,157.00</p>
+                    </div>
+            </section>
+
+            <section id="Table6" style="margin: 40px 0; line-height: 1.4;">
+                <div style="display: flex; margin: 12px 0 0; font-weight: bold; text-align: bottom;">
+                    <p style="margin: 0 auto 0 0; width: 50%; font-weight: bold;">James McNab Responsibility</p>
+                    <p style="margin: 0 0 0 auto; width: 25%;">Item(s) Total</p>
+                    <p style="margin: 0 0 0 auto; width: 25%; text-align: end;">$8,157.00</p>
+                </div>
+                <div id="Line" style="min-width: 100%; background-color: #cccccc; height: 1px;"></div>
+                <div style="display: flex; margin: 2px 0; font-family: 'ChronicaPro-Black'; color: hsl(0, 0%, 30%);">
+                    <div style="margin: 0 auto 0 0; width: 25%;"></div>
+                    <div style="margin: 0 auto; width: 25%;"></div>
+                    <p style="margin: 0 auto; width: 25%;">Transfer Fee</p>
+                    <p style="margin: 0 0 0 auto; width: 25%; text-align: end;">$225.00</p>
+                </div>
+                <div style="display: flex; margin: 2px 0; font-weight: bold; font-family: 'ChronicaPro-Black'; color: hsl(0, 0%, 30%);">
+                    <div style="margin: 0 auto 0 0; width: 25%;"></div>
+                    <div style="margin: 0 auto; width: 25%;"></div>
+                    <p style="margin: 0 auto; width: 25%;">Total Cost</p>
+                    <p style="margin: 0 0 0 auto; width: 25%; text-align: end;">$8,382.00</p>
+                </div>
+                <div style="display: flex; margin: 2px 0; font-weight: bold; font-family: 'ChronicaPro-Black'; color: hsl(0, 0%, 30%);">
+                    <div style="margin: 0 auto 0 0; width: 25%;"></div>
+                    <div style="margin: 0 auto; width: 25%;"></div>
+                    <p style="margin: 0 auto; width: 25%;">Paid To Date</p>
+                    <p style="margin: 0 0 0 auto; width: 25%; text-align: end;">$225.00</p>
+                </div>
+                <div style="display: flex; margin: 2px 0; font-weight: bold; font-family: 'ChronicaPro-Black'; color: hsl(0, 0%, 30%);">
+                    <div style="margin: 0 auto 0 0; width: 25%;"></div>
+                    <div style="margin: 0 auto; width: 25%;"></div>
+                    <p style="margin: 0 auto; width: 25%;">Balance Due</p>
+                    <p style="margin: 0 0 0 auto; width: 25%; text-align: end;">$8,157.00</p>
+                </div>
+            </section>
+            <p><i>Note: Click on Checkout to proceed to payment page</i></p>
+    </div>
+    </div>
+    </section>
+    <div style="margin: 5px auto 10px; width: 100%; max-width: 1100px; padding: 0 14px;">
+        <a href="./paymentPage/index.html"><button id="Checkout-BTN">Checkout</button></a>
+    </div>
+
+    <div id="NewLine"></div>
+
+    <h1 id="thick-HeadBelow">Cruise Itinerary</h1>
+
+    <div class="mapTracking">
+        <div class="mapActive-container activeDatedefault">
+            <div>
+                <i class="bi bi-geo-alt"></i>
+                <div class="dots"></div>
+            </div>
+
+            <div>
+                <span>July 13</span>
+                <p>Barcelona, Spain</p>
+                <a>Depart 6:00 pm</a>
+            </div>
+        </div>
+
+        <div class="mapActive-container">
+            <div>
+                <div class="dots"></div>
+                <div class="circles"></div>
+                <div class="dots"></div>
+            </div>
+
+            <div>
+                <span>July 14</span>
+                <p>Marseille, France</p>
+                <a>Arrive 9:00 am - Depart 11:00 pm</a>
+            </div>
+        </div>
+        <div class="mapActive-container">
+            <div>
+                <div class="dots"></div>
+                <div class="circles"></div>
+                <div class="dots"></div>
+            </div>
+
+            <div>
+                <span>July 15</span>
+                <p>At Sea/Ibiza</p>
+                <a>Arrive 10:00 pm -</a>
+            </div>
+        </div>
+        <div class="mapActive-container">
+            <div>
+                <div class="dots"></div>
+                <div class="circles"></div>
+                <div class="dots"></div>
+            </div>
+
+            <div>
+                <span>July 16</span>
+                <p>Ibiza, Spain</p>
+                <a>Depart 7:00 pm</a>
+            </div>
+        </div>
+        <div class="mapActive-container">
+            <div>
+                <div class="dots"></div>
+                <div class="circles"></div>
+                <div class="dots"></div>
+            </div>
+
+            <div>
+                <span>July 17</span>
+                <p>Great Day at Sea</p>
+                <!-- <a>Depart 6:00 pm</a> -->
+            </div>
+        </div>
+        <div class="mapActive-container">
+            <div>
+                <div class="dots"></div>
+                <div class="circles"></div>
+                <div class="dots"></div>
+            </div>
+
+            <div>
+                <span>July 18</span>
+                <p>Malaga, Spain</p>
+                <a>Arrive 8:00 am - Depart 8:00pm</a>
+            </div>
+        </div>
+        <div class="mapActive-container">
+            <div>
+                <div class="dots"></div>
+                <div class="circles"></div>
+                <div class="dots"></div>
+            </div>
+
+            <div>
+                <span>July 19</span>
+                <p>Seville(Cadiz), Spain</p>
+                <a>Arrive 8:00 am - Depart 6:00 pm</a>
+            </div>
+        </div>
+        <div class="mapActive-container">
+            <div>
+                <div class="dots"></div>
+                <div class="circles"></div>
+                <div class="dots"></div>
+            </div>
+
+            <div>
+                <span>July 20</span>
+                <p>Casablanca, Morroco</p>
+                <a>Arrive 8:00 am - Depart 10:00 pm</a>
+            </div>
+        </div>
+        <div class="mapActive-container">
+            <div>
+                <div class="dots"></div>
+                <div class="circles"></div>
+                <div class="dots"></div>
+            </div>
+
+            <div>
+                <span>July 21</span>
+                <p>Wonderful Day at Sea</p>
+                <!-- <a>Depart 6:00 pm</a> -->
+            </div>
+        </div>
+        <div class="mapActive-container">
+            <div>
+                <div class="dots"></div>
+                <i class="bi bi-geo-alt"></i>
+            </div>
+
+            <div>
+                <span>July 22</span>
+                <p>Lisbon, Portugal</p>
+                <a>Arrive 8:00 am</a>
+            </div>
+        </div>
+    </div>
+
+    <img id="Mapppp" src="./bl25-webmap-1-1536x864.png" alt="map">
+
+
+
+
+    <div id="LineHr"></div>
+    </section>
+    </div>
+    <div class="footerContainer-Div">
+        <section class="footerSec">
+            <div class="subFooter">
+
+                <div id="brands-container">
+                    <a href="https://www.facebook.com/AtlantisEvents"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/AtlantisEvents"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/atlantisevents/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/user/atlantiseventsinc"><i class="fab fa-youtube"></i></a>
+                </div>
+
+                <img src="../login-images/atlantis-logo.png" alt="Atlantis">
+
+                <p id="FestLocationAddress" data-translate="footerAddress">Atlantis Events, Inc.<br>9200 Sunset Blvd,
+                    Suite 500<br>West Hollywood, CA 90069</p>
+
+                <p id="copyrightText" data-translate="copyright"> 2025 Atlantis Events, Inc. All rights
+                    reserved.<br>CST# 2033720-40</p>
+
+                <div style="display: flex; justify-content: center;">
+                    <a href="https://atlantisevents.kinsta.cloud/privacy-policy/" data-translate="policyPrivacy">Policy
+                        Privacy</a>
+                    <line
+                        style="min-width: 1px; background-color: hsl(0, 0%, 10%); transform: scaleY(70%); margin: 0 6px;">
+                    </line>
+                    <a href="https://atlantisevents.kinsta.cloud/accessibility/"
+                        data-translate="accessibility">Accessibility</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./hover.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,350 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 15%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    font-family: 'ChronicaPro-Light', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'ChronicaPro-Light';
+    src: url(../EM-Chronica.Pro/ChronicaPro-Light.ttf);
+}
+
+#EverythingContainer {
+    font-size: 14px;
+    padding: 0 ;
+    height: fit-content;
+}
+
+.Header-section p {
+    font-size: 14px;
+}
+
+.header-max-width {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 17px;
+}
+
+.header-max-width img {
+    width: 140px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid hsl(0, 0%, 70%);
+    padding: 4px 6px;
+    z-index: 1;
+}
+
+.dropdown-content p {
+    display: flex;
+    align-items: center;
+    padding: 4px 6px;
+}
+
+.dropdown-content p:hover {
+    background-color: #f1f1f1;
+}
+
+.dropbtn {
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    border: 1px solid hsl(0, 0%, 80%);
+    padding: 6px;
+    cursor: pointer;
+}
+
+#LangDropdown img {
+    width: 26px;
+}
+
+#LangDropdown span {
+    margin: auto 8px;
+}
+
+#LangOptions.show {
+    flex-direction: column;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid hsl(0, 0%, 70%);
+    z-index: 1;
+}
+
+@font-face {
+    font-family: 'ChronicaPro-Black';
+    src: url(../EM-Chronica.Pro/ChronicaPro-Black.ttf);
+}
+
+#SubHeaderOrange {
+    font-family: 'ChronicaPro-Black';
+    background-color: #fe5200;
+    color: hsl(0, 0%, 98%);
+    padding: 12px 8px;
+    box-shadow: 4px 4px 10px hsl(0, 0%, 50%);
+}
+
+#SubHeaderOrange img {
+    width: 100px;
+}
+
+#SubHeaderOrange i {
+    font-size: 18px;
+    border: 2px solid hsl(0, 0%, 98%);
+    padding: 9px 9px 7px;
+    border-radius: 50%;
+    margin-left: auto;
+}
+
+#max-widthSection {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 8px 14px;
+}
+
+.ContainSec {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 8px 14px;
+    margin: 10px auto;
+}
+
+.titleUP {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.navSteps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    margin: 8px 0;
+}
+
+#AccomodationsiD {
+    font-weight: bold;
+}
+
+#LineHr {
+    background-color: hsl(0, 0%, 60%);
+    min-height: 1px;
+    min-width: 100%;
+}
+
+.ImgSection {
+    margin: 8px 0;
+    display: flex;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 628px) {
+    .ImgSection {
+        flex-wrap: wrap;
+    }
+}
+
+#coverPic {
+    width: 16em;
+    margin: 20px 0;
+}
+
+#RedMessage {
+    font-weight: bold;
+    color: hsl(0, 100%, 45%);
+}
+
+.TextUnderPic {
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+#BoldFestname {
+    font-weight: 800;
+}
+
+#StartOverLink {
+    font-weight: bold;
+}
+
+#Checkout-BTN {
+    margin: 15px 0;
+    background-color: #1e528b;
+    border: 2px solid hsl(211, 64%, 28%);
+    outline: none;
+    padding: 7px 8px;
+    text-decoration: none;
+    color: hsl(0, 0%, 98%);
+    border-radius: 3px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#NewLine {
+    height: 1px;
+    background-color: hsl(0, 0%, 15%);
+    width: 92%;
+    margin: 0 auto;
+}
+
+#thick-HeadBelow {
+    font-family: 'ChronicaPro-Black';
+    margin: 30px auto;
+    color: hsl(0, 0%, 20%);
+}
+
+.mapActive-container {
+    display: flex;
+    gap: 15px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.mapActive-container .dots {
+    width: 4px;
+    height: 47%;
+    background-image: radial-gradient(circle, #ff7171 2px, transparent 2px);
+    background-size: 4px 10px; /* adjust spacing */
+    background-repeat: repeat-y;
+    margin: 0 auto;
+}
+
+.mapActive-container i {
+    font-size: 32px;
+    color: #fe5200;
+}
+
+.mapActive-container span {
+    font-family: 'ChronicaPro-Black';
+    color: hsl(0, 0%, 50%);
+    font-size: 14px;
+}
+
+.mapActive-container p {
+    font-family: 'ChronicaPro-Black';
+    font-size: 16px;
+}
+
+.mapActive-container a {
+    color: hsl(0, 0%, 5%);
+    font-size: 12px;
+}
+
+.mapActive-container.activeDate {
+    background-color: hsl(0, 0%, 92%);    
+}
+
+.mapActive-container:hover {
+    background-color: hsl(0, 0%, 92%);    
+}
+
+.mapActive-container .circles {
+    padding: 6px;
+    background-color: #fe5200;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+#Mapppp {
+    width: 85%;
+    margin: 40px auto;
+}
+
+.footerSec {
+    line-height: 1.5;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    max-height: fit-content;
+    font-family: 'ChronicaPro-Light';
+    font-weight: bold;
+}
+
+.subFooter {
+    text-align: center;
+}
+
+.BookingArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6px 0;
+}
+
+#brands-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#brands-container i {
+    font-size: 22px;
+    background-color: #fe5200;
+    color: hsl(0, 0%, 98%);
+    border-radius: 50%;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.fa-facebook-f {
+    padding: 12px 17px !important;
+}
+
+.fa-twitter {
+    padding: 14px 12px 12px 14px !important;
+}
+
+.fa-instagram {
+    padding: 13px 15px;
+}
+
+.fa-youtube {
+    padding: 13px 12px 14px;
+}
+
+.subFooter img {
+    margin: 40px 0;
+}
+
+#FestLocationAddress {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: normal;
+    color: #1e528b;
+    cursor: pointer;
+}
+
+#copyrightText {
+    font-size: 12px;
+    margin: 30px 0 10px;
+}
+
+.subFooter a {
+    color: #fe5200;
+}
